@@ -1,0 +1,20 @@
+ function reverseAndCompareString(str) {
+    //1===========================================================================================
+    // Create An Array of the Input String, Reverse The Array and Join it again as a new String
+    var reverseString = str.split("").reverse().join("");
+    
+    //2===========================================================================================
+    //Compare the Forward and Backward string to check if they are the same or not    
+    if (reverseString == str){
+    
+        console.log(("'") + str + ("'") + " is a Palindrome. \n ");
+    }
+    else{
+    
+        console.log(("'") + str + ("'") + " is not a Palindrome. \n ");
+    }
+    
+   }
+
+   reverseAndCompareString("abba");
+   reverseAndCompareString("abab");
