@@ -1,0 +1,33 @@
+   function reverseString(str) {
+       
+    //1===========================================================================================
+    // Create an Array of the input String and print the Array in full
+    var splitString = str.split("");
+    console.log("The Word You Gave = " + str);
+    console.log("Letters of the Word Forwards = " + splitString);
+
+    //2===========================================================================================
+    // Create an Array that is the reverse of the previous Array and print this Array in full
+    var reverseArray = splitString.reverse();
+    console.log("Letters of the Word Backwards = " + reverseArray + " \n ");
+    
+    //3===========================================================================================
+    //Create a String from the split Array
+    var joinArray = reverseArray.join("");
+    
+    //4===========================================================================================
+    //Compare the Forward and Backward string to check if they are the same or not    
+    if (joinArray == str){
+    
+        console.log(("'") + str + ("'") + " is a Palindrome. \n ");
+    }
+    else{
+    
+        console.log(("'") + str + ("'") + " is not a Palindrome. \n ");
+    }
+    
+    return joinArray;
+   }
+
+   reverseString("abba");
+   reverseString("abab");
