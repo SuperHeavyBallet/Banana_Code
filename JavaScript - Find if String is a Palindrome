@@ -1,4 +1,4 @@
-   function reverseString(str) {
+   function reverseAndCompareString(str) {
        
     //1===========================================================================================
     // Create an Array of the input String and print the Array in full
@@ -29,5 +29,5 @@
     return joinArray;
    }
 
-   reverseString("abba");
-   reverseString("abab");
+   reverseAndCompareString("abba");
+   reverseAndCompareString("abab");
